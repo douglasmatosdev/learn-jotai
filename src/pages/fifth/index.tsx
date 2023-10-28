@@ -1,18 +1,16 @@
-import { ActiveLink } from "@/common/ActiveLink";
-import { SvgRoot } from "./SvgRoot";
-import styled from "styled-components";
+import { ActiveLink } from '@/common/ActiveLink'
+import { SvgRoot } from './SvgRoot'
+import styled from 'styled-components'
 
-export default function Fourth() {
+export default function Fourth(): JSX.Element {
     return (
         <Container>
-            <ActiveLink href="/">
-                HOME
-            </ActiveLink>
+            <ActiveLink href="/">HOME</ActiveLink>
             <div>
                 <SvgRoot />
             </div>
         </Container>
-    );
+    )
 }
 
 const Container = styled.div`

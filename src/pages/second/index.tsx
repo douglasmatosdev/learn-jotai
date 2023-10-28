@@ -55,8 +55,10 @@ export default function Second() {
       <ActiveLink href="/">
         HOME
       </ActiveLink>
-      <SvgRoot />
-      <Stats />
+      <div>
+        <SvgRoot />
+        <Stats />
+      </div>
     </Container>
   );
 }

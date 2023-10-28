@@ -1,6 +1,6 @@
 // https://egghead.io/lessons/react-derive-state-from-a-jotai-atom-in-react
 
-import { ActiveLink } from "@/components/ActiveLink";
+import { ActiveLink } from "@/common/ActiveLink";
 import { atom, useAtom } from "jotai";
 import styled from "styled-components";
 

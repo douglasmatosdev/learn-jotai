@@ -1,7 +1,7 @@
 // https://egghead.io/lessons/react-prevent-rerenders-and-add-functionality-with-jotai-write-only-atoms
 import { useEffect, useRef } from "react";
 import { atom, useAtom } from "jotai";
-import { ActiveLink } from "@/components/ActiveLink";
+import { ActiveLink } from "@/common/ActiveLink";
 import styled from "styled-components";
 
 type Point = [number, number];

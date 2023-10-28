@@ -1,6 +1,6 @@
 // https://egghead.io/lessons/react-share-state-between-react-components-with-jotai-useatom
 // import { useState } from "react";
-import { ActiveLink } from "@/components/ActiveLink";
+import { ActiveLink } from "@/common/ActiveLink";
 import { atom, useAtom } from "jotai";
 import styled from "styled-components";
 

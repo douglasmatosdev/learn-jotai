@@ -1,5 +1,5 @@
 'use client'
-import { ActiveLink } from '@/components/ActiveLink';
+import { ActiveLink } from '@/common/ActiveLink';
 import styled from 'styled-components';
 
 export default function Home() {

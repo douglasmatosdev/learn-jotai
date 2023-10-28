@@ -2,7 +2,7 @@ import { atom, useAtom } from "jotai";
 
 import { Point } from "@/types";
 
-const pointsToPath = (points: readonly Point[]) => {
+const pointsToPath = (points: Point[]) => {
   let d = "";
   points.forEach((point) => {
     if (d) {

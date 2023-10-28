@@ -11,7 +11,7 @@ interface ActiveLinkProps {
 export const ActiveLink = ({ children, href }: ActiveLinkProps): JSX.Element => {
   const router = useRouter()
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
     router.push(href)
   }

@@ -4,7 +4,7 @@ import { Point } from "@/types";
 
 import { addShapeAtom } from "./SvgShape";
 
-const dotsAtom = atom<readonly Point[]>([]);
+const dotsAtom = atom<Point[]>([]);
 
 export const addDotAtom = atom(null, (_get, set, update: Point) => {
   set(dotsAtom, (prev: Point[]) => [...prev, update]);

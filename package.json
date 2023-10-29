@@ -16,23 +16,15 @@
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
+    "@douglasmatosdev/eslint-config": "^1.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/styled-components": "^5.1.29",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@typescript-eslint/parser": "^6.9.0",
-    "eslint": "^8",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-n": "^16.2.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "prettier": "^3.0.3",
     "typescript": "^5"
+  },
+  "prettier": "@douglasmatosdev/eslint-config/prettier",
+  "eslintConfig": {
+    "extends": "@douglasmatosdev/eslint-config/eslint"
   }
 }

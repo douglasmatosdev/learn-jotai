@@ -1,7 +1,7 @@
 // https://egghead.io/lessons/react-derive-state-from-a-jotai-atom-in-react
 
-import { ActiveLink } from '@/common/ActiveLink'
 import { atom, useAtom } from 'jotai'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 type Point = [number, number]
@@ -54,7 +54,7 @@ const Stats = (): JSX.Element => {
 export default function Second(): JSX.Element {
     return (
         <Container>
-            <ActiveLink href="/">HOME</ActiveLink>
+            <Link href="/">HOME</Link>
             <div>
                 <SvgRoot />
                 <Stats />

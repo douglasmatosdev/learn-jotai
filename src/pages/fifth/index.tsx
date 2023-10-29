@@ -1,11 +1,11 @@
-import { ActiveLink } from '@/common/ActiveLink'
 import SvgRoot from './SvgRoot'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 export default function Fourth(): JSX.Element {
     return (
         <Container>
-            <ActiveLink href="/">HOME</ActiveLink>
+            <Link href="/">HOME</Link>
             <div>
                 <SvgRoot />
             </div>

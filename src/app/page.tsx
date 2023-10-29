@@ -1,5 +1,5 @@
 'use client'
-import { ActiveLink } from '@/common/ActiveLink'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export default function Home(): JSX.Element {
@@ -9,27 +9,21 @@ export default function Home(): JSX.Element {
                 <h1>Learn Jotai</h1>
                 <UlStyled>
                     <li>
-                        <ActiveLink href="/first">
-                            1. Share State Between React Components with Jotai useAtom
-                        </ActiveLink>
+                        <Link href="/first">1. Share State Between React Components with Jotai useAtom</Link>
                     </li>
                     <li>
-                        <ActiveLink href="/second">2. Derive State from a Jotai Atom in React</ActiveLink>
+                        <Link href="/second">2. Derive State from a Jotai Atom in React</Link>
                     </li>
                     <li>
-                        <ActiveLink href="/third">
+                        <Link href="/third">
                             3. Prevent Rerenders and Add Functionality with Jotai Write-only Atoms
-                        </ActiveLink>
+                        </Link>
                     </li>
                     <li>
-                        <ActiveLink href="/fourth">
-                            4. Structure Jotai Atoms and Add Functionality to a React App
-                        </ActiveLink>
+                        <Link href="/fourth">4. Structure Jotai Atoms and Add Functionality to a React App</Link>
                     </li>
                     <li>
-                        <ActiveLink href="/fifth">
-                            5. Preserve State by Combining Multiple Jotai Atoms into One Atom
-                        </ActiveLink>
+                        <Link href="/fifth">5. Preserve State by Combining Multiple Jotai Atoms into One Atom</Link>
                     </li>
                 </UlStyled>
             </Container>

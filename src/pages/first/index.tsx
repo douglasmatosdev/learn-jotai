@@ -1,7 +1,7 @@
 // https://egghead.io/lessons/react-share-state-between-react-components-with-jotai-useatom
 // import { useState } from "react";
-import { ActiveLink } from '@/common/ActiveLink'
 import { atom, useAtom } from 'jotai'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 const countAtom = atom(0)
@@ -32,7 +32,7 @@ const Counter2 = (): JSX.Element => {
 export default function First(): JSX.Element {
     return (
         <Container>
-            <ActiveLink href="/">HOME</ActiveLink>
+            <Link href="/">HOME</Link>
             <Counter1 />
             <Counter2 />
         </Container>

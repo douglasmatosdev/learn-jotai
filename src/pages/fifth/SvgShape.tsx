@@ -1,3 +1,4 @@
+'use client'
 import { atom, useAtom } from 'jotai'
 
 import { Point, ShapeAtom } from '@/types'

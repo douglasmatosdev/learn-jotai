@@ -1,8 +1,8 @@
 // https://egghead.io/lessons/react-prevent-rerenders-and-add-functionality-with-jotai-write-only-atoms
 import { useEffect, useRef } from 'react'
 import { atom, useAtom } from 'jotai'
-import { ActiveLink } from '@/common/ActiveLink'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 type Point = [number, number]
 
@@ -73,7 +73,7 @@ const SvgRoot = (): JSX.Element => {
 export default function Third(): JSX.Element {
     return (
         <Container>
-            <ActiveLink href="/">HOME</ActiveLink>
+            <Link href="/">HOME</Link>
             <div>
                 <SvgRoot />
             </div>

@@ -1,5 +1,5 @@
 import { ActiveLink } from '@/common/ActiveLink'
-import { SvgRoot } from './SvgRoot'
+import SvgRoot from './SvgRoot'
 import styled from 'styled-components'
 
 export default function Fourth(): JSX.Element {

@@ -17,7 +17,7 @@ const pointsToPath = (points: Point[]): string => {
 
 export const createShapeAtom = (points: Point[]): ShapeAtom => atom({ path: pointsToPath(points) })
 
-export const SvgShape = ({ shapeAtom }: { shapeAtom: ShapeAtom }): JSX.Element => {
+const SvgShape = ({ shapeAtom }: { shapeAtom: ShapeAtom }): JSX.Element => {
     const [shape] = useAtom(shapeAtom)
 
     return (
@@ -26,3 +26,5 @@ export const SvgShape = ({ shapeAtom }: { shapeAtom: ShapeAtom }): JSX.Element =
         </g>
     )
 }
+
+export default SvgShape

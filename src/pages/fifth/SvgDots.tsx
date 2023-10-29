@@ -15,7 +15,7 @@ export const commitDotsAtom = atom(null, (get, set): void => {
     set(dotsAtom, [])
 })
 
-export const SvgDots = (): JSX.Element => {
+const SvgDots = (): JSX.Element => {
     const [dots] = useAtom(dotsAtom)
 
     return (
@@ -26,3 +26,5 @@ export const SvgDots = (): JSX.Element => {
         </g>
     )
 }
+
+export default SvgDots

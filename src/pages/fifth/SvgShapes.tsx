@@ -1,7 +1,7 @@
 import { atom, useAtom } from 'jotai'
 
 import { Point, ShapeAtom } from '@/types'
-import { createShapeAtom, SvgShape } from './SvgShape'
+import SvgShape, { createShapeAtom } from './SvgShape'
 
 const shapeAtomsAtom = atom<ShapeAtom[]>([])
 
@@ -10,14 +10,16 @@ export const addShapeAtom = atom(null, (_get, set, update: Point[]) => {
     set(shapeAtomsAtom, prev => [...prev, shapeAtom])
 })
 
-export const SvgShapes = (): JSX.Element => {
+const SvgShapes = (): JSX.Element => {
     const [shapeAtoms] = useAtom(shapeAtomsAtom)
 
     return (
         <g>
-            {shapeAtoms.map(shapeAtom => (
-                <SvgShape key={`${shapeAtom}`} shapeAtom={shapeAtom} />
+            {shapeAtoms.map((shapeAtom, index) => (
+                <SvgShape key={`svg-shape__${index}`} shapeAtom={shapeAtom} />
             ))}
         </g>
     )
 }
+
+export default SvgShapes

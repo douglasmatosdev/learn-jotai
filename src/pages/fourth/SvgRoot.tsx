@@ -1,7 +1,7 @@
 import { atom, useAtom } from 'jotai'
 import { Point } from '@/types'
-import { SvgShape } from './SvgShape'
-import { addDotAtom, SvgDots, commitDotsAtom } from './SvgDots'
+import SvgShape from './SvgShape'
+import SvgDots, { addDotAtom, commitDotsAtom } from './SvgDots'
 
 const drawingAtom = atom(false)
 
@@ -20,7 +20,7 @@ const handleMouseMoveAtom = atom(null, (get, set, update: Point) => {
     }
 })
 
-export const SvgRoot = (): JSX.Element => {
+const SvgRoot = (): JSX.Element => {
     const [, handleMouseMove] = useAtom(handleMouseMoveAtom)
     const [, handleMouseDown] = useAtom(handleMouseDownAtom)
     const [, handleMouseUp] = useAtom(handleMouseUpAtom)
@@ -42,3 +42,5 @@ export const SvgRoot = (): JSX.Element => {
         </svg>
     )
 }
+
+export default SvgRoot

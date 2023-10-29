@@ -21,7 +21,7 @@ export const addShapeAtom = atom(null, (_get, set, update: Point[]) => {
     set(shapeAtom, { path: pointsToPath(update) })
 })
 
-export const SvgShape = (): JSX.Element => {
+const SvgShape = (): JSX.Element => {
     const [shape] = useAtom(shapeAtom)
 
     return (
@@ -30,3 +30,5 @@ export const SvgShape = (): JSX.Element => {
         </g>
     )
 }
+
+export default SvgShape
